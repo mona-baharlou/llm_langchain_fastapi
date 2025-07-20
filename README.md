@@ -16,13 +16,13 @@ This project implements a **chatbot backend** using [FastAPI](https://fastapi.ti
 
 ## Project Structure
 
-
+![](https://github.com/mona-baharlou/llm_langchain_fastapi/blob/master/project_structure.PNG)
 
 ## How It Works
-1- PDF is split into small text chunks
-2- Each chunk is converted to vector using HuggingFace embeddings
-3- FAISS stores all vectors and does similarity search
-4- Most relevant chunks are passed to the LLM for response generation
+- PDF is split into small text chunks
+- Each chunk is converted to vector using HuggingFace embeddings
+- FAISS stores all vectors and does similarity search
+- Most relevant chunks are passed to the LLM for response generation
 
 ## Tech Stack
  - LLM: google/flan-t5-base via HuggingFace Transformers
@@ -30,3 +30,7 @@ This project implements a **chatbot backend** using [FastAPI](https://fastapi.ti
  - PDF parsing: PyMuPDF or PyPDFLoader
  - Backend: FastAPI
  - Vector DB: FAISS
+
+## API Doc
+![](https://github.com/mona-baharlou/llm_langchain_fastapi/blob/master/fastApi_Doc.PNG)
+
